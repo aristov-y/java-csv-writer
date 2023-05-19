@@ -60,7 +60,7 @@ public class Book {
     public static class AuthorMapper implements FieldMapper<Book> {
 
         @Override
-        public Object map(Book value) {
+        public Object serialize(Book value) {
             return Optional.ofNullable(value).map(Book::getAuthor).map(Author::getName);
         }
     }

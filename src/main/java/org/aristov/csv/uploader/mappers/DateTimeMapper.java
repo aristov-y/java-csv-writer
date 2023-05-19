@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class DateTimeMapper implements FieldMapper<LocalDateTime> {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
     @Override
-    public Object map(LocalDateTime value) {
+    public Object serialize(LocalDateTime value) {
         if (value == null) {
             return null;
         }

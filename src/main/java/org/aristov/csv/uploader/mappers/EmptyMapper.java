@@ -2,7 +2,7 @@ package org.aristov.csv.uploader.mappers;
 
 public class EmptyMapper implements FieldMapper<Object> {
     @Override
-    public Object map(Object value) {
+    public Object serialize(Object value) {
         return null;
     }
 }
